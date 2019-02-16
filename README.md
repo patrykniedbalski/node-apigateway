@@ -20,5 +20,6 @@ builder.addResponseInterceptor()
 ```
 or use decorate service with request or response interceptors for custom one time usage:
 ```typescript
-apiGateway = apiGateway.interceptRequest(new ApiGatewayResponseJsonParserInterceptor());
+apiGateway = apiGateway.interceptRequest(new ApiGatewayRequestOptionsInterceptor({path: 'subApiPath'}));
+apiGateway = apiGateway.interceptResponse(new ApiGatewayResponseJsonParserInterceptor());
 ```
