@@ -1,5 +1,5 @@
 Usage:
-
+```typescript
 const requestOptions = {
  hostname: 'www.example.com',
  path: '/api/'
@@ -8,3 +8,4 @@ const requestOptions = {
 const builder = new ApiGatewayServiceBuilder();
 const apiGateway = builder.setRequestOptions(PersonApiGatewayConfig).buildHttpsApiGatewayService()
 let response = await apiGateway.get('/path');
+```
