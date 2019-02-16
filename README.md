@@ -1,4 +1,4 @@
-##simple Usage:
+#simple usage:
 ```typescript
 const defaultRequestOptions = {
  hostname: 'www.example.com',
@@ -10,7 +10,7 @@ const apiGateway = builder.setRequestOptions(defaultRequestOptions).buildHttpsAp
 let response = await apiGateway.get('/path');
 ```
 
-##more complex usage:
+#more complex usage:
 Use builder to decorate service with custom interceptors (classes that implements ApiGatewayResponseInterceptor or ApiGatewayRequestInterceptor)
 ```typescript
 const builder = new ApiGatewayServiceBuilder();
